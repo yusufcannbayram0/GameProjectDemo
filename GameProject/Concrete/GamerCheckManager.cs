@@ -12,7 +12,15 @@ namespace GameProject.Concrete
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {
-            return true;
+            if ((DateTime.Now.Year - gamer.DateOfBirth.Year) >= 18)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
     }
 }

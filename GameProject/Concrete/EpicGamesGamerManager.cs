@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace GameProject.Concrete
 {
-    public class GamerManager : BaseManager
+    public class EpicGamesGamerManager:BaseManager
     {
         IGamerCheckService _gamerCheckService;
 
-        public GamerManager(IGamerCheckService gamerCheckService)
+        public EpicGamesGamerManager(IGamerCheckService gamerCheckService)
         {
             _gamerCheckService = gamerCheckService;
         }
@@ -25,8 +25,9 @@ namespace GameProject.Concrete
             }
             else
             {
-                throw new Exception("Not a valid person");
+                Console.WriteLine("Bilgilerinizi doğrulanamadı. Kayıt eklenmedi");
             }
+            
         }
     }
 }

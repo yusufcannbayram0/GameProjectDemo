@@ -54,9 +54,10 @@
     <Compile Include="Abstract\IGameService.cs" />
     <Compile Include="Adapters\MernisServiceAdapter.cs" />
     <Compile Include="Concrete\CampaignManager.cs" />
+    <Compile Include="Concrete\EpicGamesGamerManager.cs" />
     <Compile Include="Concrete\GameManager.cs" />
     <Compile Include="Concrete\GamerCheckManager.cs" />
-    <Compile Include="Concrete\GamerManager.cs" />
+    <Compile Include="Concrete\SteamGamerManager.cs" />
     <Compile Include="Concrete\GameSaleManager.cs" />
     <Compile Include="Connected Services\MernisServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>

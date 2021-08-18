@@ -23,8 +23,11 @@ namespace GameProjectDemo
                 DateOfBirth = new DateTime(2003, 03, 05),
                 NationalityId = "11111111111"
             };             
-            BaseManager gamerManager = new GamerManager(new GamerCheckManager()); // GamerCheckManager yerine MernisServiceAdapter'de kullanılabilir
-            gamerManager.Add(gamer1);
+            BaseManager steamGamerManager = new SteamGamerManager(new MernisServiceAdapter()); // e devlet kontrolü
+            BaseManager epicgamesGamerManager = new EpicGamesGamerManager(new GamerCheckManager()); // 18 yaşından büyük küçük kontrolü
+            steamGamerManager.Add(gamer1);
+            epicgamesGamerManager.Add(gamer1);
+            
             Console.WriteLine("*******************************************");
             Game game1 = new Game()
             {
