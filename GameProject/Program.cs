@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace GameProject
+namespace GameProjectDemo
 {
     class Program
     {
